@@ -11,7 +11,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  
+ 
   <title>Riki Shop Real</title>
   
   
@@ -27,7 +27,168 @@
     body {
       background-color: #121212;
     }
-    
+
+.fade-in-down-big {
+animation: fadeInDownBig 1s 
+}
+
+.teks {
+  animation: fadeInDownBig 1s 
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-in-up {
+ animation: bounce-in-up 2s 
+}
+
+.bounce-in-up-1 .bounce-in-up-2 .bounce-in-up-3{
+  animation: bounce-in-up 2s
+}
+
+.bounce-in-up-1 {
+ animation: bounce-in-up 10s 
+}
+
+.bounce-in-up-2 {
+ animation: bounce-in-up 9s 
+}
+
+.bounce-in-up-3 {
+ animation: bounce-in-up 8s 
+}
+
+.bounce-in-up-4 {
+ animation: bounce-in-up 7s 
+}
+
+.bounce-in-up-5 {
+ animation: bounce-in-up 6s 
+}
+
+.bounce-in-up-6 {
+ animation: bounce-in-up 5s 
+}
+
+.bounce-in-up-7 {
+ animation: bounce-in-up 4s 
+}
+
+@keyframes bounce-in-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slide-in 2s;
+}
+
+.slide-in{
+  animation: slide-in 2s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-1 {
+  animation: slide-in-1 3s;
+}
+
+.slide-in-1{
+  animation: slide-in-1 3s;
+}
+
+@keyframes slide-in-1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.zoom-berulang {
+  animation: zoom-berulang 2s linear infinite;
+}
+
+@keyframes zoom-berulang {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+  animation: zoom-in 3s;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
     video-container {
   position: fixed;
   width: 100%;
@@ -59,7 +220,7 @@ video {
       box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
       border-radius: 60px;
     }
-    
+   
     header .container .title {
       color: white;
       font-size: 30px;
@@ -152,32 +313,31 @@ video {
 </video>
   
   <header>
-    <img src="./profile.jpg" alt="Profile">
-    <div class="container">
+    <img src="./profile.jpg" alt="Profile" class="zoom-berulang">
+    <div class="container fade-in-down-big">
       <div class="title">Rikishopreal <i class="fi fi-ss-badge-check"></i></div>
-      <div class="desc">Hello, my name is RikiShopReal</div>
+      <div class="desc typing">Hello, my name is RikiShopReal</div>
     </div>
-    <div class="myinfo">
+    <div class="myinfo slide-in">
       <div><\> Coding</div>
       <div>🎧 Music</div>
       <div>🛍️ Shopping</div>
       <div>🎮 Gaming</div>
 
     </div>
-    <audio controls style="width: 300px; height: 20px;">
+    <audio controls class="slide-in-1" style="width: 300px; height: 20px;">
   <source src="audio.mp3" type="audio/mp3">
 </audio>
   </header>
   <section>
-    <a href="https://wa.me/6285775414552"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</font></button></a>
-   <a  target="blank" href="https://wa.me/6285891142486"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-whatsapp"></i> WhatsApp2</font></button></a>
-    <a target="blank" href="https://youtube.com/@rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-youtube"></i> YouTube</font></button></a>
-    <a target="blank" href="https://www.instagram.com/riki.setore?igsh=dWpvY3EzZ2d4cGI0"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-instagram"></i> Instagram</font></button></a>
-    <a target="blank" href="https://www.tiktok.com/@ucok_cj01?_t=ZS-8tnyKoFERp1&_r=1"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-tiktok"></i> Tiktok</font></button>
+    <a class="bounce-in-up-7" href="https://wa.me/6285775414552"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</font></button></a>
+   <a  target="blank" class="bounce-in-up-6" href="https://wa.me/6285891142486"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-whatsapp"></i> WhatsApp2</font></button></a>
+    <a target="blank"class="bounce-in-up-5" href="https://youtube.com/@rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-youtube"></i> YouTube</font></button></a>
+    <a target="blank" class="bounce-in-up-4" href="https://www.instagram.com/riki.setore?igsh=dWpvY3EzZ2d4cGI0"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-instagram"></i> Instagram</font></button></a>
+    <a target="blank" class="bounce-in-up-3" href="https://www.tiktok.com/@ucok_cj01?_t=ZS-8tnyKoFERp1&_r=1"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-tiktok"></i> Tiktok</font></button>
     </a>
-       <a target="blank" href="https://linkbio.co/rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">🔗 all Grup</font></button><center><p><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">© 2025 Rikishopreal. Thank you all</font></p></center>
+       <a target="blank" class="bounce-in-up-2" href="https://linkbio.co/rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">🔗 all Grup</font></button> </a>
+    <span class="bounce-in-up-1"><a></a><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">© 2025 Rikishopreal. Thank you all</font></span>
     </a>
-  </section>
   </body>
-
 </html>
