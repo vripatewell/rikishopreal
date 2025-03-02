@@ -11,12 +11,57 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
- 
+    <link rel="stylesheet" href="style">
+  
   <title>Riki Shop Real</title>
   
   
   <style>
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css')
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.tampil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+.tampil-body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.tampil-body div {
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	background-color: white;
+}
+.tampil-body button {
+	cursor: pointer;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #DC143C;
+	border: 0;
+	margin-top: 20px;
+
+	color: white;
+	padding: 10px;
+}
+
     
     * {
       padding: 0;
@@ -326,6 +371,17 @@ video {
       <div>🎮 Gaming</div>
 
     </div>
+
+
+    	<div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
+				<button onclick=" putarmusic()">LANJUTKAN</button>
+			</div>
+		</div>
+	</div>
+    
 <audio id="bcksound" loop>
   <source src="https://files.catbox.moe/yqx94u.mp3" type="audio/mp3">
 </audio>
@@ -339,5 +395,15 @@ video {
        <a target="blank" class="bounce-in-up-3" href="https://linkbio.co/rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">🔗 all Grup</font></button> </a>
     <span class="bounce-in-up-2"><a></a><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">© 2025 Rikishopreal. Thank you all</font></span>
     </a>
+
+       	<script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			a.style.display = "none";
+			var audio = new Audio('audio.mp3');
+			audio.play();
+		}
+	</script>
+    
   </body>
 </html>
