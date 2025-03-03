@@ -11,20 +11,22 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style">
-  
+ 
   <title>Riki Shop Real</title>
   
   
   <style>
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css')
-
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-}
-
+    
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #121212;
+    }
 
 .tampil {
 	position: fixed;
@@ -61,17 +63,6 @@
 	color: white;
 	padding: 10px;
 }
-
-    
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: #121212;
-    }
 
 .fade-in-down-big {
 animation: fadeInDownBig 1s 
@@ -353,7 +344,7 @@ video {
       </font>
     </h1>
   </center>
-  <video autoplay muted="true" loop id="myVideo">
+  <video autoplay muted loop id="myVideo">
   <source src="background.mp4" type="video/mp4">
 </video>
   
@@ -371,20 +362,6 @@ video {
       <div>🎮 Gaming</div>
 
     </div>
-
-
-    	<div class="tampil" id="tampil">
-		<div class="tampil-body">
-			<div>
-				<h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
-				<button onclick=" putarmusic()">LANJUTKAN</button>
-			</div>
-		</div>
-	</div>
-    
-<audio id="bcksound" loop>
-  <source src="https://files.catbox.moe/yqx94u.mp3" type="audio/mp3">
-</audio>
   </header>
   <section>
     <a class="bounce-in-up-7" href="https://wa.me/6285775414552"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</font></button></a>
@@ -393,10 +370,23 @@ video {
     <a target="blank" class="bounce-in-up-4" href="https://www.tiktok.com/@ucok_cj01?_t=ZS-8tnyKoFERp1&_r=1"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><i class="fa-brands fa-tiktok"></i> Tiktok</font></button>
     </a>
        <a target="blank" class="bounce-in-up-3" href="https://linkbio.co/rikishopreal"><button><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">🔗 all Grup</font></button> </a>
+       
+          <div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1 class="teks-berubah-warna">SELAMAT DATANG DI SOSIALMEDIA RIKI SHOP REAL</h1>
+				<button onclick="putarmusic()">LANJUTKAN</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+       
     <span class="bounce-in-up-2"><a></a><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;"><font color="#FFFFFF" style="text-shadow: 0 0 10px #00F; animation: bersinar 2s infinite;">© 2025 Rikishopreal. Thank you all</font></span>
     </a>
-
-       	<script>
+    
+<script>
 		var a = document.getElementById('tampil');
 		function putarmusic(){
 			a.style.display = "none";
@@ -404,6 +394,6 @@ video {
 			audio.play();
 		}
 	</script>
-    
+
   </body>
 </html>
