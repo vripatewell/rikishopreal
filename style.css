@@ -245,3 +245,31 @@
       0% { transform: translate(-100%, -100%) rotate(45deg); }
       100% { transform: translate(100%, 100%) rotate(45deg); }
     }
+    
+.nailong {
+  position: absolute;
+  width: 70px;
+  aspect-ratio: 1 / 1; /* pastikan bentuk tetap bulet */
+  object-fit: contain; /* jaga gambar tetap proporsional */
+  top: 90px;
+  z-index: 9;
+  pointer-events: none;
+  animation: joget 1s infinite ease-in-out;
+  mix-blend-mode: normal;
+  background: transparent !important;
+  border: none !important;
+}
+
+.nailong-left {
+  left: 10px;
+}
+
+.nailong-right {
+  right: 10px;
+}
+
+@keyframes joget {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
